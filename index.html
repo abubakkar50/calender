@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calender</title>
+    <style>
+        .calender {
+            background: grey;
+        }
+
+        .calender p {
+            color: black;
+            font-size: 4rem;
+            font-weight: bold;
+            text-align: center;
+            padding-top: 1rem;
+
+            overflow: hidden;
+        }
+
+        .calender ul {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            list-style: none;
+            font-size: 2rem;
+            font-weight: bold;
+            border: 1px solid lightgreen;
+            width: 70px;
+            height: 70px;
+            background: rgb(137, 132, 132);
+        }
+
+        .months {
+            background: rgba(0, 0, 0, 0.683);
+            border: none;
+            color: white;
+        }
+
+        .friday {
+            background: rgba(211, 7, 7, 0.636);
+        }
+
+        .orther-months {
+            background: wheat;
+        }
+
+
+        @media only screen and (max-width: 429px) {
+            .calender ul {
+                display: grid;
+                grid-template-columns: repeat(7, 1fr);
+                gap: 0;
+            }
+
+            li {
+                width: 40px;
+                height: 40px;
+                font-size: 1rem;
+                font-weight: bold;
+            }
+
+        }
+
+        @media only screen and (max-width: 329px) {
+            .calender ul {
+                display: grid;
+                grid-template-columns: repeat(7, 1fr);
+                gap: 0;
+            }
+
+            li {
+                width: 35px;
+                height: 35px;
+                font-size: 1rem;
+                font-weight: bold;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="calender">
+
+        <p>May</p>
+        <ul>
+            <li class="months">Su</li>
+            <li class="months">Mo</li>
+            <li class="months">Tu</li>
+            <li class="months">We</li>
+            <li class="months">Th</li>
+            <li class="months">Fr</li>
+            <li class="months">Sa</li>
+            <li class="orther-months">28</li>
+            <li class="orther-months">29</li>
+            <li class="orther-months">30</li>
+            <li>1</li>
+            <li>2</li>
+            <li class="friday">3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li class="friday">10</li>
+            <li>11</li>
+            <li>12</li>
+            <li>13</li>
+            <li>14</li>
+            <li>15</li>
+            <li>16</li>
+            <li class="friday">17</li>
+            <li>18</li>
+            <li>19</li>
+            <li>20</li>
+            <li>21</li>
+            <li>22</li>
+            <li>23</li>
+            <li class="friday">24</li>
+            <li>25</li>
+            <li>26</li>
+            <li>27</li>
+            <li>28</li>
+            <li>29</li>
+            <li>30</li>
+            <li class="friday">01</li>
+            <li class="orther-months">02</li>
+
+        </ul>
+    </div>
+</body>
+
+</html>
